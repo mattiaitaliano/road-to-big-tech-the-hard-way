@@ -18,3 +18,17 @@ I won't set a final goal, which would be hard to really find. I will focus on th
 ## Index:
 
 ***work in progress***
+
+## Rules
+
+Doing it the hard way:
+
+1. I am the Documentation, thy only true guide; thou shalt have no other guides before me.
+2. Do ot commit copy-paste sin.
+3. Honor the academic lectures, the proper books and papers. 
+...
+...
+
+Long story short: no video tutorials, nor LLM for copy-pasting, but high focus on lectures, books and papers.
+
+I want to understand and master what I learn, not just complete a project. For this reason, I will focus on understanding and on a rigid spaced repetition schedule. 
