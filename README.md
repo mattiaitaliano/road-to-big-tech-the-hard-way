@@ -31,4 +31,6 @@ Doing it the hard way:
 
 Long story short: no video tutorials, nor LLM for copy-pasting, but high focus on lectures, books and papers.
 
-I want to understand and master what I learn, not just complete a project. For this reason, I will focus on understanding and on a rigid spaced repetition schedule. 
+I want to understand and master what I learn, not just complete a project. For this reason, I will focus on understanding and on a rigid spaced repetition schedule.
+
+Oh, and just for fun: all I'll code I will write it on NEOVIM as editor to learn movements and stuff. So it will really be the "hard way" and I can pose saying that I'm using vim, btw.
