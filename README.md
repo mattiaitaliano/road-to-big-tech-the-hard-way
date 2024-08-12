@@ -37,4 +37,4 @@ Oh, and just for fun: all I'll code I will write it on NEOVIM as editor to learn
 
 ### Doing the hard way
 
-Helpful (article)[https://www.quora.com/How-does-one-go-about-reading-a-math-book/answer/Joe-Blitzstein?share=b329838f&srid=he8P] on how to read and study math really and with a deep understanding.
+Helpful [article](https://www.quora.com/How-does-one-go-about-reading-a-math-book/answer/Joe-Blitzstein?share=b329838f&srid=he8P) on how to read and study math really and with a deep understanding.
