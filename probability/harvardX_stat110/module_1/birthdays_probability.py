@@ -1,19 +1,28 @@
-from math import factorial
+from math import log, exp
+import matplotlib.pyplot as plt
+
 
 def birthday_probability(n_people):
-    s = 365**n_people
-    a = factorial(365)/factorial(365-n_people)
-    p = 1 - ( a / s )
+    """
+    To avoid the overflow error, counting each factorial of big numbers,
+    we use exp and log as exp(log(x)) = x and log(a/b) = log(a) + log(b)
+    and log(a * b) = log(a) + log(b)
+
+    The formula is P = (365!)/(365-n_people)!*365**n_people
+    """
+    s = n_people * log(365) # log of 365^n
+    a = sum(log(i) for i in range(365, 365 - n_people, -1))
+    p = round((1 - exp(a - s)) * 100, 2)
     return p
 
-if __name__ == '__main__':
-    is_input_ok = False
-    while (not is_input_ok):
-        try:
-            n_people = int(input("Total people in the room: "))
-            is_input_ok = True
-        except ValueError:
-            print("Please insert a valid number!")
 
-    p = birthday_probability(n_people)
-    print(f"The probability of having 2 birthdays equal between {n_people} people is: {round(p*100, 2)}%")
+if __name__ == '__main__':
+    probabilities = []
+
+    for people in range(1,84):
+        p = birthday_probability(people)
+        probabilities.append(p)
+
+    fig, ax = plt.subplots()
+    ax.plot([i for i in range(1,84)], probabilities)
+    plt.show()
