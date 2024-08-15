@@ -12,17 +12,21 @@ def birthday_probability(n_people):
     """
     s = n_people * log(365) # log of 365^n
     a = sum(log(i) for i in range(365, 365 - n_people, -1))
-    p = round((1 - exp(a - s)) * 100, 2)
+    p = 1 - exp(a - s)
     return p
 
 
 if __name__ == '__main__':
     probabilities = []
 
-    for people in range(1,84):
+    for people in range(1,101):
         p = birthday_probability(people)
         probabilities.append(p)
 
-    fig, ax = plt.subplots()
-    ax.plot([i for i in range(1,84)], probabilities)
+    
+    plt.figure(figsize=(12,6))
+    plt.plot([i for i in range(1,101)], probabilities, ':bo')
+
+    plt.axhline(y = 0.5, color = 'r', linestyle = '-')
+
     plt.show()
