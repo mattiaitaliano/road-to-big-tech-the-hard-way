@@ -28,3 +28,16 @@ Note that multiplication works as long as we have the same amount of repetition 
     * n(n-1)...(n-k+1) if k <= n so [ n! / (n-k)! ]
 
 
+### Binominial coefficient
+
+(n)         n!
+( ) = -------------
+(k)     (n-k)!k!
+
+this happens for k <= n, while for k > n we got (n k) = 0
+
+e.g. you use it when you have n = 4 people to mix in group of k = 2. How many different combination do you have? You resolve the binominial coefficient. 
+
+note: often, being (n-k)! possible to reproduce on the numerator, try to simplify the equation. e.g. (8 3) = 8*7*6*5! / 5!*3! = 8*7*6/3! = 8*7*6 / 3*2*1 = 336 / 6 = 56
+
+
