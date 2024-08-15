@@ -39,4 +39,14 @@ This means that being a complement if the event occurs when its complementar doe
 For the same reason, saying the complement of the intersection of A and B (all where A != B) is equal to say A complement (all not A) union B complement (all not B).
 
 
+### coin flip notation
+
+Flipping the coin 10 times, the outcomes are HHHTHHTTHT (head and tails).
+
+S is the set of all possible strings of length 10 of H and T.
+
+H = 1
+
+T = 0
+
 
