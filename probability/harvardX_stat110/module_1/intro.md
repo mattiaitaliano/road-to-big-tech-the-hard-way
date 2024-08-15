@@ -41,12 +41,14 @@ For the same reason, saying the complement of the intersection of A and B (all w
 
 ### coin flip notation
 
-Flipping the coin 10 times, the outcomes are HHHTHHTTHT (head and tails).
+Flipping the coin 10 times, a possible outcome is HHHTHHTTHT (head and tails).
 
 S is the set of all possible strings of length 10 of H and T.
 
 H = 1
 
 T = 0
+
+The outcome is a sequence of s1, s2, ... s10 with sj ∈ { 0, 1 }
 
 
