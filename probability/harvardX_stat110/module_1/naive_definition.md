@@ -41,3 +41,18 @@ e.g. you use it when you have n = 4 people to mix in group of k = 2. How many di
 note: often, being (n-k)! possible to reproduce on the numerator, try to simplify the equation. e.g. (8 3) = 8*7*6*5! / 5!*3! = 8*7*6/3! = 8*7*6 / 3*2*1 = 336 / 6 = 56
 
 
+## Vandermonde's Identity
+
+( m + n )      ( m ) (   n   )
+(       ) = sum(   ) (       )
+(   k   )      ( j ) ( k - j )
+
+sum for k and j = 0
+
+### Story proof explanation
+
+m peacocks and n toucans from which k set of birds will be chosen.
+
+There are (z k) possibilities (with z = m + n) for this set of birds. 
+
+If there are j peacocks m in the set (m j) so the number available for tucans n will be k - j, then summing the cases for j gives us the V's identity.
