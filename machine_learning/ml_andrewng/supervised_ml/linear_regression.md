@@ -32,4 +32,12 @@ It is a linear function that is more likely to be used as a simplified model, th
 
 Being a linear equation, the model is called linear regression. 
 
+w and b are called parameters (also coefficients and weights). They are important to adjust the results of f(X).
 
+## Math representation
+
+F(x) = wX + b
+
+b: y-intercept, as it is where the F(x) intersect the y axis
+
+w: slope of the F(X)
