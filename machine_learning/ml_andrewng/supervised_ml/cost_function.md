@@ -46,6 +46,20 @@ We need to resolve the cost function for each w and draw all the coordinates of 
 
 J is a parabola toward down where the min value is the w for what J(w) = 0, so no error at all.
 
+It's basically about measuring the distance of each training set from the line.
+
+When the model isn't semplified, J(w,b) can't be a parabola as the dimension are 3 (J(w,b), w, b). It looks more like an amaca where each side is a parabola towards down.
+
+(e.g. like a mount circular map of the height but upside down)
+
+The graph of w and b (w on x axis and b on y's) looks more like this mount circular map but flat that draws ellipsis diagonally.
+
+In the middle of the axis there is the value 0, not at the origin, so it's possible to see the effects of the negative and positive values. 
+
+Indeed, in one combination of them, there is the minimum value of J(w,b) - the center of the concentric circles - the one that minimize the sum of distances from y(i) to y-hat(i) on same x(i).
+
+
+
 ## Choose w and b
 
 This is the real problem, in fact by minimazing for w and b the cost function J(w,b) you pick the values for b and w that make J(w,b) = 0.
