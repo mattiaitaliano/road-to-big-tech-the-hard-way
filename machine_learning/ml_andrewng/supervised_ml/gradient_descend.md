@@ -57,4 +57,40 @@ In this case, in fact, the b is being calculated with w = tmp_w parameter, not t
 
 **The algorithm says: repeat updating simultaneously w and b until convergence.**
 
+## Calculating gradient descend.
+
+![Representation](../assets/gradient_descend_slope.png)
+
+Considering a simplified model such as J(w) with b = 0, the graph J(w) on y axis and w on x axis represent this parabola towards bottom.
+
+The minimum, so the value of J(w) where the error is minimised, is at a certain value of w.
+
+The gradient descend is in this case an update of w equal to:
+
+w = w - alpha(dJ(w)/dw)
+
+Where:
+
+w - is the current value of w.
+alpha - is a small _positive_ number between 0 and 1
+dJ(w)/dw - is the derivate of J(w) in w.
+
+The derivate represent the slope of the line that is tangent to the poin (J(w), w) on the cost curve J(w).
+
+This slope can be a positive number (the slope is indeed calculated calculating the ratio hight/base of the triangle between two points on the curve (where the distance is close to zero).
+
+It opens two ways:
+
+w is the value we are calculating, alpha is always positive by definition.
+
+1. If the slope is positive, we are subtracting to w a positive amount, then the value of w is reducing.
+
+w = w - alpha * (positive amount)
+
+2. If the slope is positive, we are subtracting to w a negative amount, so, we are adding a positive amount making w increasing.
+
+
+w = w - alpha * (negative amount) = w - (- (alpha * (positive amount))) = w + alpha * (positive amount)
+
+
 
